@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Header from '../../components/Header';
 import Nav from '../../components/Nav';
+import AdBanner from "../../components/AdBanner";
 
 
 
@@ -117,6 +118,7 @@ export default function MovieDetail({
         ) : (
           <p className="mt-10 italic">No official trailer available.</p>
         )}
+        <AdBanner slot="2222222222" />
 
         {/* CAST */}
         <div className="mt-6">
@@ -139,6 +141,7 @@ export default function MovieDetail({
             ))}
           </div>
         </div>
+        <AdBanner slot="3333333333" />
 
         {/* SIMILAR MOVIES */}
         <div className="mt-12">
@@ -159,7 +162,7 @@ export default function MovieDetail({
             ))}
           </div>
         </div>
-
+        <AdBanner slot="4444444444" />
       </div>
     </>
   );
