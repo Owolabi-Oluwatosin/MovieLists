@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
 
 export default function PrivacyPolicy() {
   return (
@@ -6,6 +8,11 @@ export default function PrivacyPolicy() {
       <Head>
         <title>Privacy Policy | HotMovieList</title>
       </Head>
+      {/* Header */}
+      <Header />
+
+      {/* Nav */}
+      <Nav />
       <main className="max-w-4xl mx-auto p-8">
         <h1 className="text-3xl mb-4">Privacy Policy</h1>
         <p>
