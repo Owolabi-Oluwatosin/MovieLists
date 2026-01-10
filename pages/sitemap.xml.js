@@ -1,3 +1,8 @@
+export default function Sitemap() {
+  // This component is never rendered
+  return null;
+}
+
 export async function getServerSideProps({ res }) {
   const baseUrl = "https://hotmovielist.com";
 
@@ -14,7 +19,7 @@ export async function getServerSideProps({ res }) {
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${staticPages
       .map(
-        path => `
+        (path) => `
       <url>
         <loc>${baseUrl}${path}</loc>
       </url>
@@ -27,5 +32,42 @@ export async function getServerSideProps({ res }) {
   res.write(sitemap);
   res.end();
 
-  return { props: {} };
+  return {
+    props: {}
+  };
 }
+
+
+
+
+// export async function getServerSideProps({ res }) {
+//   const baseUrl = "https://hotmovielist.com";
+
+//   const staticPages = [
+//     "",
+//     "/african-cinema",
+//     "/nollywood",
+//     "/about",
+//     "/contact",
+//     "/privacy-policy"
+//   ];
+
+//   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+//   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+//     ${staticPages
+//       .map(
+//         path => `
+//       <url>
+//         <loc>${baseUrl}${path}</loc>
+//       </url>
+//     `
+//       )
+//       .join("")}
+//   </urlset>`;
+
+//   res.setHeader("Content-Type", "text/xml");
+//   res.write(sitemap);
+//   res.end();
+
+//   return { props: {} };
+// }
