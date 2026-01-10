@@ -19,7 +19,7 @@ export default function Nollywood({ movies }) {
         name="description"
         content="Discover African and global movies, watch trailers, and find where to stream films legally on Netflix and Amazon Prime."
       />
-      <link rel="icon" href="/logo.svg" />
+      <link rel="icon" href="/logo.png" />
 
       {/* OPEN GRAPH (Facebook, WhatsApp, Instagram) */}
       <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@ export default function Nollywood({ movies }) {
       />
       <meta
         property="og:image"
-        content="https://hotmovielist.com/logo-social.png"
+        content="https://hotmovielist.com/logo.png"
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -46,7 +46,7 @@ export default function Nollywood({ movies }) {
       />
       <meta
         name="twitter:image"
-        content="https://hotmovielist.com/logo-social.png"
+        content="https://hotmovielist.com/logo.png"
       />
       </Head>
 
