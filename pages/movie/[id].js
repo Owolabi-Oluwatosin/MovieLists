@@ -39,6 +39,39 @@ export default function MovieDetail({
           property="og:image"
           content={`${BASE_URL}${movie.backdrop_path || movie.poster_path}`}
         />
+        <meta
+        name="description"
+        content="Discover African and global movies, watch trailers, and find where to stream films legally on Netflix and Amazon Prime."
+      />
+      <link rel="icon" href="/logo.svg" />
+
+      {/* OPEN GRAPH (Facebook, WhatsApp, Instagram) */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://hotmovielist.com/" />
+      <meta property="og:title" content="HotMovieList – Discover African & Global Movies" />
+      <meta
+        property="og:description"
+        content="Discover African and global movies, watch trailers, and find where to stream films legally."
+      />
+      <meta
+        property="og:image"
+        content="https://hotmovielist.com/logo-social.png"
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      {/* TWITTER / X */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content="https://hotmovielist.com/" />
+      <meta name="twitter:title" content="HotMovieList – Discover African & Global Movies" />
+      <meta
+        name="twitter:description"
+        content="Discover African and global movies, watch trailers, and find where to stream films legally."
+      />
+      <meta
+        name="twitter:image"
+        content="https://hotmovielist.com/logo-social.png"
+      />
         <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
